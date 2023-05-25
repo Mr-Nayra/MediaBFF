@@ -13,4 +13,12 @@
   @apply border border-[#7C48E8] rounded-2xl text-[#7C48E8] hover:text-white hover:bg-[#7C48E8];
 }
 
+.grey-button{
+  @apply bg-[#434343] border border-[#434343] rounded-2xl text-white hover:bg-transparent hover:text-[#434343];
+}
+
+.grey-button-outline{
+  @apply border border-[#434343] rounded-2xl text-[#434343] hover:text-white hover:bg-[#434343];
+}
+
 @tailwind utilities;
