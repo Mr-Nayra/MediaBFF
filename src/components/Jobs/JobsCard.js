@@ -9,7 +9,7 @@ const JobsCard = (props) => {
   };
 
   return (
-    <div className="basis-1/2 px-5">
+    <div className="px-5">
       <div className="border-[0.5px] border-solid border-black border-opacity-70 rounded-2xl p-10 drop-shadow">
         <div className="flex">
           <div className="w-full min-h-[200px]">
