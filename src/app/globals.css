@@ -6,11 +6,11 @@
 }
 
 .purple-button {
-  @apply bg-[#7C48E8] rounded-2xl;
+  @apply bg-[#7C48E8] border border-[#7C48E8] rounded-2xl text-white hover:bg-transparent hover:text-[#7C48E8];
 }
 
 .purple-button-outline {
-  @apply border border-[#7C48E8] rounded-2xl;
+  @apply border border-[#7C48E8] rounded-2xl text-[#7C48E8] hover:text-white hover:bg-[#7C48E8];
 }
 
 @tailwind utilities;
