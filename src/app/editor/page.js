@@ -2,7 +2,6 @@ import ArticleCard from "@/components/Editor/ArticleCard";
 import ContactCard from "@/components/Editor/ContactCard";
 import EditorCard from "@/components/Editor/EditorCard";
 import TweetsCard from "@/components/Editor/TweetsCard";
-import Image from "next/image";
 import React from "react";
 
 const index = () => {
