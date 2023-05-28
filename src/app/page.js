@@ -1,4 +1,4 @@
-import Carousel from "@/components/homepage/Carousel";
+import Carousel from "@/components/Carousel/Carousel";
 import ExploreOptions from "@/components/homepage/ExploreOptions";
 import Hero from "@/components/homepage/Hero";
 import SearchDivision from "@/components/homepage/SearchDivision";
