@@ -1,33 +1,7 @@
 import Card from "@/components/Card/Card";
-import SideBar from "@/components/SideBar/SideBar";
+import SideBar from "@/components/Dashboard/SideBar";
+import TopBar from "@/components/Dashboard/TopBar";
 import React from "react";
-
-const TopBar = () => {
-  return (
-    <div className="flex items-center justify-between">
-      <div className="flex gap-5">
-        <div>
-          <button className="rounded-2xl bg-black text-white font-semibold text-xl py-4 px-6">
-            Add Media
-          </button>
-        </div>
-        <div>
-          <button className="rounded-2xl bg-black text-white font-semibold text-xl py-4 px-6">
-            View Pitches
-          </button>
-        </div>
-        <div>
-          <button className="rounded-2xl bg-black text-white font-semibold text-xl py-4 px-6">
-            View Status
-          </button>
-        </div>
-      </div>
-      <div>
-        <p>UserName</p>
-      </div>
-    </div>
-  );
-};
 
 const JobsDiv = () => {
   return (
