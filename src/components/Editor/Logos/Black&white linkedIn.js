@@ -19,8 +19,8 @@ const Black_white_linkedin = () => {
         fill="#434343"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M25.6309 10H15.4046C14.9154 10 14.5 10.3869 14.5 10.8634V21.136C14.5 21.6131 14.7726 22 15.2617 22H25.488C25.9777 22 26.5 21.6131 26.5 21.136V10.8634C26.5 10.3869 26.1206 10 25.6309 10ZM19.0714 14.5714H20.6869V15.3949H20.7046C20.9509 14.9509 21.6783 14.5 22.5777 14.5C24.304 14.5 24.7857 15.4166 24.7857 17.1143V20.2857H23.0714V17.4269C23.0714 16.6669 22.768 16 22.0583 16C21.1966 16 20.7857 16.5834 20.7857 17.5411V20.2857H19.0714V14.5714ZM16.2143 20.2857H17.9286V14.5714H16.2143V20.2857ZM18.1429 12.5714C18.1429 13.1634 17.6634 13.6429 17.0714 13.6429C16.4794 13.6429 16 13.1634 16 12.5714C16 11.9794 16.4794 11.5 17.0714 11.5C17.6634 11.5 18.1429 11.9794 18.1429 12.5714Z"
         fill="#939393"
       />
@@ -44,9 +44,9 @@ const Black_white_linkedin = () => {
           width="40"
           height="40"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"

@@ -1,6 +1,7 @@
 "use client";
 import JobsCard from "@/components/Jobs/JobsCard";
 import TopBar from "@/components/Jobs/TopBar";
+import NavBar from "@/components/NavBar/NavBar";
 import React from "react";
 
 const page = () => {
@@ -164,41 +165,44 @@ const page = () => {
   const middleIndex = Math.ceil(jobs.length / 2);
 
   return (
-    <div className="flex justify-center">
-      <div className="container">
-        <TopBar />
-        <div className="grid grid-cols-2 grid-flow-dense">
-          <div className="flex flex-col gap-y-10">
-            {jobs.slice(0, middleIndex).map((item) => (
-              <JobsCard
-                title={item.title}
-                companyName={item.companyName}
-                companyDescription={item.companyDescription}
-                jobType={item.jobType}
-                jobLocation={item.jobLocation}
-                jobDescription={item.jobDescription}
-                jobResponsibilities={item.jobResponsibilities}
-                perksAndBenifits={item.perksAndBenifits}
-              />
-            ))}
-          </div>
-          <div className="flex flex-col gap-y-10">
-            {jobs.slice(middleIndex, jobs.length).map((item) => (
-              <JobsCard
-                title={item.title}
-                companyName={item.companyName}
-                companyDescription={item.companyDescription}
-                jobType={item.jobType}
-                jobLocation={item.jobLocation}
-                jobDescription={item.jobDescription}
-                jobResponsibilities={item.jobResponsibilities}
-                perksAndBenifits={item.perksAndBenifits}
-              />
-            ))}
+    <>
+      <NavBar />
+      <div className="flex justify-center">
+        <div className="container">
+          <TopBar />
+          <div className="grid grid-cols-2 grid-flow-dense">
+            <div className="flex flex-col gap-y-10">
+              {jobs.slice(0, middleIndex).map((item) => (
+                <JobsCard
+                  title={item.title}
+                  companyName={item.companyName}
+                  companyDescription={item.companyDescription}
+                  jobType={item.jobType}
+                  jobLocation={item.jobLocation}
+                  jobDescription={item.jobDescription}
+                  jobResponsibilities={item.jobResponsibilities}
+                  perksAndBenifits={item.perksAndBenifits}
+                />
+              ))}
+            </div>
+            <div className="flex flex-col gap-y-10">
+              {jobs.slice(middleIndex, jobs.length).map((item) => (
+                <JobsCard
+                  title={item.title}
+                  companyName={item.companyName}
+                  companyDescription={item.companyDescription}
+                  jobType={item.jobType}
+                  jobLocation={item.jobLocation}
+                  jobDescription={item.jobDescription}
+                  jobResponsibilities={item.jobResponsibilities}
+                  perksAndBenifits={item.perksAndBenifits}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

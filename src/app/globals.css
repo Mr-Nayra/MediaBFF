@@ -28,4 +28,8 @@ body {
   @apply border border-[#434343] rounded-2xl text-[#434343] hover:text-white hover:bg-[#434343];
 }
 
+.swiper{
+  @apply w-full;
+}
+
 @tailwind utilities;

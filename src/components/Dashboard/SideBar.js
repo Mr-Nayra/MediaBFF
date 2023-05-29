@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 const SideBar = () => {
+  
   return (
     <div className="min-w-[20vw] py-10 bg-[#FCFCFC] drop-shadow h-screen sticky top-0">
       <div className="flex items-center justify-around">

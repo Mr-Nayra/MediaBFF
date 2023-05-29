@@ -50,25 +50,35 @@ const TrendingArticles = () => {
   );
 };
 
-const UpcommingSessions = () => {
+const UpcommingSessions = (props) => {
   return (
     <div>
       <h2 className="font-semibold text-xl">Upcoming Sessions</h2>
       <div className="flex gap-5">
-        <Card smallCard />
-        <Card smallCard />
+        <Card
+          smallCard
+          title={props.data[0].title}
+          date={props.data[0].date}
+          des={props.data[0].des}
+        />
+        <Card
+          smallCard
+          title={props.data[1].title}
+          date={props.data[1].date}
+          des={props.data[1].des}
+        />
       </div>
     </div>
   );
 };
 
-const MainDiv = () => {
+const MainDiv = (props) => {
   return (
     <div className="py-10 px-28 w-full max-w-[80vw]">
       <TopBar />
       <div className="flex gap-16 mt-20 justify-between">
         <div>
-          <UpcommingSessions />
+          <UpcommingSessions data={props.data} />
           <TrendingArticles />
         </div>
         <JobsDiv />
@@ -78,10 +88,23 @@ const MainDiv = () => {
 };
 
 const page = () => {
+  const data = [
+    {
+      title: "Lorem Ipsum Dolor",
+      des: "consectetur adipiscing elit, sed do eiusmod.",
+      date: "Jan 12th, 2022",
+    },
+    {
+      title: "Lorem Ipsum Dolor",
+      des: "consectetur adipiscing elit, sed do eiusmod.",
+      date: "Jan 12th, 2022",
+    },
+  ];
+
   return (
     <div className="flex">
       <SideBar />
-      <MainDiv />
+      <MainDiv data={data} />
     </div>
   );
 };
