@@ -1,5 +1,7 @@
 import React from "react";
 import Black_white_facebook from "./Logos/Black&white facebook";
+import Black_white_twitter from "./Logos/Black&white twitter";
+import Black_white_linkedin from "./Logos/Black&white linkedIn";
 
 const ContactCard = () => {
   return (
@@ -12,11 +14,11 @@ const ContactCard = () => {
             <p className="text-base">@Username123</p>
           </div>
           <div className="flex items-center gap-2">
-            <Black_white_facebook />
+            <Black_white_twitter />
             <p className="text-base">@Username123</p>
           </div>
           <div className="flex items-center gap-2">
-            <Black_white_facebook />
+            <Black_white_linkedin />
             <p className="text-base">@Username123</p>
           </div>
         </div>

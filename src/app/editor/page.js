@@ -23,6 +23,14 @@ const index = () => {
       content:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi laboriosam similique illum quidem excepturi modi, molestiae accusantium ab provident aut repudiandae, fugit nihil, quod magni quos commodi animi eos itaque.",
     },
+    {
+      heading:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Nemo enim ipsam voluptatem quia voluptas sit.",
+      people: ["Person 1", "Person 2", "Person 3X"],
+      time: "12 Days Ago",
+      content:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi laboriosam similique illum quidem excepturi modi, molestiae accusantium ab provident aut repudiandae, fugit nihil, quod magni quos commodi animi eos itaque.",
+    },
   ];
 
   return (

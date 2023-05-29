@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Work+Sans:wght@400;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 
-body{
+body {
+  font-family:Work Sans;
   @apply overflow-x-hidden;
 }
 
@@ -17,11 +20,11 @@ body{
   @apply border border-[#7C48E8] rounded-2xl text-[#7C48E8] hover:text-white hover:bg-[#7C48E8];
 }
 
-.grey-button{
+.grey-button {
   @apply bg-[#434343] border border-[#434343] rounded-2xl text-white hover:bg-transparent hover:text-[#434343];
 }
 
-.grey-button-outline{
+.grey-button-outline {
   @apply border border-[#434343] rounded-2xl text-[#434343] hover:text-white hover:bg-[#434343];
 }
 

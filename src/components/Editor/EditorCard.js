@@ -1,5 +1,5 @@
-import Image from "next/image";
 import React from "react";
+import MapPin from "./Logos/MapPin";
 
 const EditorCard = () => {
   return (
@@ -7,7 +7,9 @@ const EditorCard = () => {
       <div className="h-[100px] w-[100px] rounded-full bg-cyan-500"></div>
       <h2 className="font-semibold text-xl mt-5">Aadithi Karnam</h2>
       <p className="text mt-2">Senior Commerce Editor</p>
-      <p className="mt-1">Bangalore, India</p>
+      <div className="flex items-center">
+        <MapPin /> <p className="mt-1">Bangalore, India</p>
+      </div>
       <button className="purple-button-outline py-3 px-5 rounded-2xl my-10">
         is this you?
       </button>
