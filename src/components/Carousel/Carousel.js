@@ -6,18 +6,21 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css";
+import LeftArrow from "./LeftArrow";
+import RightArrow from "./RightArrow";
 
-const Swipe = () => {
+const Carousel = () => {
   const swiperRef = useRef();
 
   return (
-    <>
-      <button onClick={() => swiperRef.current.slideNext()}>
-        Go to Next Slide
+    <div className="w-full flex mt-24 gap-x-10">
+      <button onClick={() => swiperRef.current.slidePrev()}>
+        <LeftArrow />
       </button>
       <Swiper
         slidesPerView={3}
         onSwiper={(swiper) => {
+          console.log(swiper);
           swiperRef.current = swiper;
         }}
       >
@@ -40,17 +43,9 @@ const Swipe = () => {
           <Card />
         </SwiperSlide>
       </Swiper>
-      <button onClick={() => swiperRef.current.slidePrev()}>
-        Go to Prev Slide
+      <button onClick={() => swiperRef.current.slideNext()}>
+        <RightArrow />
       </button>
-    </>
-  );
-};
-
-const Carousel = () => {
-  return (
-    <div className="container">
-      <Swipe />
     </div>
   );
 };
