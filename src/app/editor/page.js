@@ -2,6 +2,7 @@ import ArticleCard from "@/components/Editor/ArticleCard";
 import ContactCard from "@/components/Editor/ContactCard";
 import EditorCard from "@/components/Editor/EditorCard";
 import TweetsCard from "@/components/Editor/TweetsCard";
+import NavBar from "@/components/NavBar/NavBar";
 import React from "react";
 
 const index = () => {
@@ -26,6 +27,7 @@ const index = () => {
 
   return (
     <>
+      <NavBar />
       <div className="h-40 bg-gradient-to-r from-[#874AA3] to-[#c92189]"></div>
       <div className="flex justify-center">
         <div className="container flex flex-col gap-x-8 lg:flex-row xl:gap-x-14">

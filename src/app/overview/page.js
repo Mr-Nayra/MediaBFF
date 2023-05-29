@@ -64,7 +64,7 @@ const UpcommingSessions = () => {
 
 const MainDiv = () => {
   return (
-    <div className="py-10 px-28 w-full">
+    <div className="py-10 px-28 w-full max-w-[80vw]">
       <TopBar />
       <div className="flex gap-16 mt-20 justify-between">
         <div>

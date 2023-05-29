@@ -3,7 +3,7 @@ import React from "react";
 
 const SideBar = () => {
   return (
-    <div className="w-[25vw] py-10 bg-[#FCFCFC] drop-shadow h-screen sticky top-0">
+    <div className="min-w-[20vw] py-10 bg-[#FCFCFC] drop-shadow h-screen sticky top-0">
       <div className="flex items-center justify-around">
         <p className="px-6 py-3 font-semibold">logo</p>
         <Link href="/">
