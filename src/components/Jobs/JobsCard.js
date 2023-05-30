@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
+import MapPin from "../Svgs/MapPin";
 
 const JobsCard = (props) => {
   const [expand, setExpand] = useState(false);
@@ -9,7 +10,7 @@ const JobsCard = (props) => {
   };
 
   return (
-    <div className="px-5">
+    <div>
       <div className="border-[0.5px] border-solid border-black border-opacity-70 rounded-2xl p-10 drop-shadow">
         <div className="flex">
           <div className="w-full min-h-[200px]">
@@ -21,17 +22,21 @@ const JobsCard = (props) => {
             <div className="flex gap-5 items-stretch mt-10">
               <p>{props.jobType}</p>
               <div className="border border-black"></div>
-              <p>{props.jobLocation}</p>
+              <p className="flex">
+                <MapPin /> {props.jobLocation}
+              </p>
             </div>
           </div>
           <div className="flex flex-col min-w-[160px] justify-between items-center">
             {/* <Image /> */}
             <div className="w-[100px] h-[100px] bg-red-600 rounded-full"></div>
             <button
-              className="bg-[#434343] text-white py-4 px-6 rounded-2xl"
+              className={`${
+                expand ? "grey-button-outline" : "grey-button"
+              } py-4 px-6 rounded-2xl`}
               onClick={expandCard}
             >
-              Read More
+              {expand ? "Show Less" : "Read More"}
             </button>
           </div>
         </div>
@@ -56,6 +61,12 @@ const JobsCard = (props) => {
                   <li>{item}</li>
                 ))}
               </ul>
+              <button
+                className={"grey-button py-4 px-6 rounded-2xl mt-14"}
+                onClick={expandCard}
+              >
+                Apply Now
+              </button>
             </div>
           </>
         )}
