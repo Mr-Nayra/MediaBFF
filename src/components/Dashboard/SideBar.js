@@ -10,13 +10,13 @@ const SideBar = () => {
     <div className="min-w-[20vw] py-10 bg-[#FCFCFC] drop-shadow h-screen sticky top-0">
       <div className="flex items-center justify-around flex-col 2xl:flex-row">
         <p className="px-6 py-3 font-semibold">logo</p>
-        <Link href="/">
+        {/* <Link href="/">
           <button className="purple-button-outline px-6 py-3 font-semibold">
             Go To Home
           </button>
-        </Link>
+        </Link> */}
       </div>
-      <div className="mt-[5vh] flex items-center flex-col 2xl:mt-[10vh]">
+      <div className="mt-[8vh] flex items-center flex-col 2xl:mt-[10vh]">
         <Link href="/overview">
           <p
             className={`${
