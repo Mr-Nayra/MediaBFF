@@ -5,7 +5,7 @@ import React from "react";
 
 const JobsDiv = () => {
   return (
-    <div className="min-w-[30vw]">
+    <div className="2xl:min-w-[30vw]">
       <h2 className="font-semibold text-xl">Jobs</h2>
       <JobDesDiv />
       <JobDesDiv />
@@ -15,8 +15,8 @@ const JobsDiv = () => {
 
 const JobDesDiv = () => {
   return (
-    <div className="flex gap-5 mt-5">
-      <div className="w-20 h-20 bg-red-500 rounded-2xl"></div>
+    <div className="flex gap-5 mt-5 items-start">
+      <div className="min-w-[80px] min-h-[80px] bg-red-500 rounded-2xl"></div>
       <div>
         <h3 className="font-semibold text-base">Job Title</h3>
         <p>HP</p>
@@ -74,7 +74,7 @@ const UpcommingSessions = (props) => {
 
 const MainDiv = (props) => {
   return (
-    <div className="py-10 px-28 w-full max-w-[80vw]">
+    <div className="py-10 xl:px-10 2xl:px-28 w-full max-w-[80vw]">
       <TopBar />
       <div className="flex gap-16 mt-20 justify-between">
         <div>

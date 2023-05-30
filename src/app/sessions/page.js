@@ -1,5 +1,6 @@
 import Carousel from "@/components/Carousel/Carousel";
 import SideBar from "@/components/Dashboard/SideBar";
+import TopBar from "@/components/Dashboard/TopBar";
 import React from "react";
 
 const CompletedSessions = (props) => {
@@ -13,7 +14,7 @@ const CompletedSessions = (props) => {
 
 const UpcommingSessions = (props) => {
   return (
-    <div>
+    <div className="mt-20">
       <h2 className="font-semibold text-xl">Upcoming Sessions</h2>
       <Carousel data={props.data} smallCard className="mt-5" />
     </div>
@@ -22,7 +23,8 @@ const UpcommingSessions = (props) => {
 
 const MainDiv = (props) => {
   return (
-    <div className="py-10 px-28 w-full max-w-[80vw]">
+    <div className="py-10 xl:px-10 2xl:px-28 w-full max-w-[80vw]">
+      <TopBar />
       <UpcommingSessions data={props.data} />
       <CompletedSessions data={props.data} />
     </div>

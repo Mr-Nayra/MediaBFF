@@ -20,7 +20,7 @@ const NewsDiv = () => {
 
 const MainDiv = () => {
   return (
-    <div className="py-10 px-28 w-full max-w-[80vw]">
+    <div className="py-10 xl:px-10 2xl:px-28 w-full max-w-[80vw]">
       <TopBar />
       <div className="mt-20">
         <h2 className="font-semibold text-xl">Today’s Top News</h2>

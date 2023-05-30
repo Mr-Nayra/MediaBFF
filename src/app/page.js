@@ -37,7 +37,7 @@ const Home = () => {
           <Hero />
           <SearchDivision />
           <ExploreOptions />
-          <Carousel className="mt-10" hasButton data={data} />
+          <Carousel className="mt-24" hasButton data={data} />
         </div>
       </div>
     </>

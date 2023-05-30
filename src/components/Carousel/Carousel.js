@@ -12,16 +12,25 @@ import Card2 from "../Card/Card2";
 
 const Carousel = (props) => {
   const swiperRef = useRef();
-  
+
   return (
     <div className={`${props.className} w-full flex gap-x-10 justify-stretch`}>
       <button onClick={() => swiperRef.current.slidePrev()}>
         <LeftArrow />
       </button>
       <Swiper
-        slidesPerView={3}
+        spaceBetween={20}
+        slidesPerView={1}
         onSwiper={(swiper) => {
           swiperRef.current = swiper;
+        }}
+        breakpoints={{
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
         }}
       >
         {props.data.map((item) => (

@@ -8,7 +8,7 @@ const SideBar = () => {
 
   return (
     <div className="min-w-[20vw] py-10 bg-[#FCFCFC] drop-shadow h-screen sticky top-0">
-      <div className="flex items-center justify-around">
+      <div className="flex items-center justify-around flex-col 2xl:flex-row">
         <p className="px-6 py-3 font-semibold">logo</p>
         <Link href="/">
           <button className="purple-button-outline px-6 py-3 font-semibold">
@@ -16,12 +16,12 @@ const SideBar = () => {
           </button>
         </Link>
       </div>
-      <div className="mt-[10vh] flex items-center flex-col">
+      <div className="mt-[5vh] flex items-center flex-col 2xl:mt-[10vh]">
         <Link href="/overview">
           <p
             className={`${
               pathname === "/overview" ? "text-[#7C48E8]" : "text-[#656565]"
-            } text-xl font-semibold mt-[6vh]`}
+            } text-lg font-semibold mt-[6vh] 2xl:text-xl`}
           >
             OVERVIEW
           </p>
@@ -30,7 +30,7 @@ const SideBar = () => {
           <p
             className={`${
               pathname === "/sessions" ? "text-[#7C48E8]" : "text-[#656565]"
-            } text-xl font-semibold mt-[6vh]`}
+            } text-lg font-semibold mt-[6vh] 2xl:text-xl`}
           >
             SESSIONS
           </p>
@@ -39,7 +39,7 @@ const SideBar = () => {
           <p
             className={`${
               pathname === "/latestNews" ? "text-[#7C48E8]" : "text-[#656565]"
-            } text-xl font-semibold mt-[6vh]`}
+            } text-lg font-semibold mt-[6vh] 2xl:text-xl`}
           >
             LATEST NEWS
           </p>
@@ -48,7 +48,7 @@ const SideBar = () => {
           <p
             className={`${
               pathname === "/analytics" ? "text-[#7C48E8]" : "text-[#656565]"
-            } text-xl font-semibold mt-[6vh]`}
+            } text-lg font-semibold mt-[6vh] 2xl:text-xl`}
           >
             ANALYTICS
           </p>

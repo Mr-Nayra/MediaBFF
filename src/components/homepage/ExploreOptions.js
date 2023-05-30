@@ -5,7 +5,7 @@ const ExploreDivision = () => {
   return (
     <div className="flex flex-col justify-center items-center w-60">
       <Image src="/homepage-1.png" width={300} height={300} />
-      <h2 className="text-3xl font-semibold text-center">
+      <h2 className="text-3xl font-semibold text-center mt-8">
         Lorem ipsum dolor sit amet
       </h2>
       <p className="text-base mt-8 text-center">

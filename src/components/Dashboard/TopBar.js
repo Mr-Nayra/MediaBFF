@@ -1,4 +1,5 @@
 import React from "react";
+import UserImage from "../Svgs/UserImage";
 
 const TopBar = () => {
   return (
@@ -20,8 +21,9 @@ const TopBar = () => {
           </button>
         </div>
       </div>
-      <div>
+      <div className="flex items-center gap-x-5">
         <p>UserName</p>
+        <UserImage />
       </div>
     </div>
   );

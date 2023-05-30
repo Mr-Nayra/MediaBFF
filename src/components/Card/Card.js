@@ -6,7 +6,7 @@ const Card = (props) => {
   return (
     <div
       className={`${
-        props.smallCard ? "w-72" : "w-96"
+        props.smallCard ? "w-72" : ""
       } bg-white rounded-2xl drop-shadow mt-5 overflow-hidden mb-1`}
     >
       {/* <Image /> */}
