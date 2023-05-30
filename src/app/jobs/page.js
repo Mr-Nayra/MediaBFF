@@ -170,7 +170,7 @@ const page = () => {
       <div className="flex justify-center">
         <div className="container">
           <TopBar />
-          <div className="grid grid-cols-2 grid-flow-dense">
+          <div className="grid grid-cols-2 grid-flow-dense mb-16">
             <div className="flex flex-col gap-y-10">
               {jobs.slice(0, middleIndex).map((item) => (
                 <JobsCard

@@ -1,5 +1,5 @@
 import React from "react";
-import MapPin from "./Logos/MapPin";
+import MapPin from "../Svgs/MapPin";
 
 const EditorCard = () => {
   return (

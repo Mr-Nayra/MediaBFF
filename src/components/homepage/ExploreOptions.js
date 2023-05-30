@@ -3,7 +3,7 @@ import React from "react";
 
 const ExploreDivision = () => {
   return (
-    <div className="flex flex-col justify-center items-center w-60">
+    <div className="flex flex-col justify-center items-center w-full sm:w-60">
       <Image src="/homepage-1.png" width={300} height={300} />
       <h2 className="text-3xl font-semibold text-center mt-8">
         Lorem ipsum dolor sit amet
@@ -20,7 +20,7 @@ const ExploreDivision = () => {
 
 const ExploreOptions = () => {
   return (
-    <div className="mt-28 flex gap-x-20">
+    <div className="mt-20 flex gap-x-20 flex-col gap-y-10 sm:flex-row lg:mt-24">
       <ExploreDivision />
       <ExploreDivision />
     </div>
